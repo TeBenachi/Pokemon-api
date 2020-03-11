@@ -41,5 +41,4 @@ function displayResults(data) {
   let poke_pic = document.querySelector(".poke_pic");
   poke_pic.innerHTML = `<img src="${data.sprites.front_default}" class="img-fluid" >`;
 
-  
 }
