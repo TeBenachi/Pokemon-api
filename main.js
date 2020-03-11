@@ -1,6 +1,5 @@
 const api = {
   base: "https://pokeapi.co/api/v2/",
-  id: 1
 };
 
 // const button = document.querySelector("button");
@@ -15,7 +14,7 @@ function setRandomInt(max) {
 }
 console.log(setRandomInt(20));
 
-fetch(`${api.base}ability/` + setRandomInt(20))
+fetch(`${api.base}pokemon/` + setRandomInt(20))
   .then(data => {
     return data.json();
   })
@@ -24,12 +23,23 @@ fetch(`${api.base}ability/` + setRandomInt(20))
 function displayResults(data) {
   console.log(data);
 
+  let name = document.querySelector(".name");
+  name.innerHTML = `${data.name}`;
+
   let id = document.querySelector(".id");
   id.innerText = `ID: ${data.id}`;
 
-  let name = document.querySelector(".name");
-  name.innerText = `Name: ${data.name}`;
+  let species = document.querySelector(".species");
+  species.innerText = `${data.species.name}`;
 
-  let moves = document.querySelector(".moves");
-  moves.innerText = `Other Names: ${data.names}`;
+  let base_experience = document.querySelector(".experience");
+  base_experience.innerText = `Required experience level: ${data.base_experience}`;
+
+  let abilities = document.querySelector(".abilities");
+  abilities.innerText = `Abilities: ${data.abilities[0].ability.name}`;
+
+  let poke_pic = document.querySelector(".poke_pic");
+  poke_pic.innerHTML = `<img src="${data.sprites.front_default}" class="img-fluid" >`;
+
+  
 }

@@ -10,24 +10,30 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css" class="">
   </head>
   <body>
     <div class="container">
       <h1>My API projects No.3: PokéAPI</h1>
       <p>The RESTful Pokémon API courtesy of Pokeapi.co</p>
 
-      <div class="alert alert-danger text-center" role="alert">
-        Note: Still work in progress!
-      </div>
-
       <div class="app-wrap">
         <!-- <button>Click</button> -->
-        <p class="pokeID"></p>
-        <div class="inner">
-          <p class="id"></p>
-          <p class="name"></p>
-          <p class="moves"></p>
+
+        <div class="row mb-2 p-4 rounded bg-green">
+          <div class="col-md-8">
+            <h1 class="name"></h1>
+            <p class="pt-3">Pokémon <span class="id"></span> <span class="species"> </span> Pokémon species.</p>
+            <p class="experience"></p>
+            <p class="abilities"></p>
+
+          </div>
+          <div class="col-md-4 bg-white rounded">
+            <div class="poke_pic"></div>
+          </div>
         </div>
+
+          
       </div>
     </div>
     <script src="main.js"></script>
