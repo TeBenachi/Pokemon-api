@@ -2,27 +2,20 @@
 
 My API Journy #3. API courtesy of Pokeapi.co.
 
-*** Still work in progress ***
-
 Live demo: https://tebenachi.github.io/Pokemon-api/
 
-Note to self:  Future objectives
+Note to myself: Things I learned
 
-(1) Load a random Pokemon on initial load
+(1) Fetch API with vanilla JS
 
-(2) Add a button to refresh and load a new pokemon
+(2) Show random number (to generate a random Pokemon id)
 
-(3) Fix the additional names objective. Currently the array of objects are not showing correctly.
+(3) Capitalized the first letter in the name string 
 
-(4) Possibly add pokemon image matching to its name
-
-(5) Add more Pokemon details such as Evolution Chains, Moves... 
+(4) Replace - from string with " " (space) in array objects
 
 
-
-Note: 
-
-Fair Use Policy => https://pokeapi.co/docs/v2.html#fairuse
+Fair Use Policy from Pokeapi.co => https://pokeapi.co/docs/v2.html#fairuse
 
 
 
